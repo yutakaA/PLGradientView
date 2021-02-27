@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jts-dS-b7Y">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHr-sK-eyq">
+                                <rect key="frame" x="144.5" y="373" width="125" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="DDd-1J-KDd"/>
+                                    <constraint firstAttribute="height" constant="50" id="fkt-v9-AXG"/>
+                                </constraints>
+                                <state key="normal" title="Storyboardで作成">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToUseStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eb5-fE-Eg6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mC-jf-Wah">
+                                <rect key="frame" x="144.5" y="473" width="125" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Efq-IQ-4IE"/>
+                                    <constraint firstAttribute="height" constant="50" id="lhG-yf-kEq"/>
+                                </constraints>
+                                <state key="normal" title="コードで作成">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToUseCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bpg-8e-aOe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0mC-jf-Wah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3u8-ID-euX"/>
+                            <constraint firstItem="0mC-jf-Wah" firstAttribute="top" secondItem="rHr-sK-eyq" secondAttribute="bottom" constant="50" id="O8D-f6-TU4"/>
+                            <constraint firstItem="rHr-sK-eyq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="URn-sx-7TH"/>
+                            <constraint firstItem="rHr-sK-eyq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sif-Sa-oSb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ici-pW-a8E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Use Storyboard View Controller-->
+        <scene sceneID="VWq-hx-QUr">
+            <objects>
+                <viewController storyboardIdentifier="UseStoryboardViewController" id="Dn3-zP-OKF" customClass="UseStoryboardViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E4R-vQ-vGd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLg-VM-jXv" customClass="PLGradientView" customModule="PLGradientView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VFC-q5-lSw"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VLg-VM-jXv" firstAttribute="trailing" secondItem="E4R-vQ-vGd" secondAttribute="trailing" id="R79-cj-uBe"/>
+                            <constraint firstItem="VLg-VM-jXv" firstAttribute="leading" secondItem="E4R-vQ-vGd" secondAttribute="leading" id="jyB-UH-wWq"/>
+                            <constraint firstAttribute="bottom" secondItem="VLg-VM-jXv" secondAttribute="bottom" id="n0u-ke-rYT"/>
+                            <constraint firstItem="VLg-VM-jXv" firstAttribute="top" secondItem="E4R-vQ-vGd" secondAttribute="top" id="tT2-pb-w4v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradientView" destination="VLg-VM-jXv" id="WkM-NU-8Ko"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21n-bL-nbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.6376811594205" y="126.5625"/>
+        </scene>
+        <!--Use Code View Controller-->
+        <scene sceneID="wYh-is-Qzq">
+            <objects>
+                <viewController storyboardIdentifier="UseCodeViewController" id="LVq-RW-1s6" customClass="UseCodeViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="na7-AO-4ZL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0YW-XH-Shr"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16c-hZ-ZAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iQC-vz-LjY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jts-dS-b7Y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xxJ-Cp-uJg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vfd-mH-LrA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFB-5T-NHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
